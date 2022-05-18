@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { NameComponent } from './name/name.component';
 import { IdentityComponent } from './identity/identity.component';
 import { TableDameComponent } from './table-dame/table-dame.component';
 import { TableAvartaComponent } from './table/table-avarta/table-avarta.component';
+import { FormComponent } from './form/form.component';
+import { ShowValidateComponent } from './components/show-validate/show-validate.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,16 @@ import { TableAvartaComponent } from './table/table-avarta/table-avarta.componen
     NameComponent,
     IdentityComponent,
     TableDameComponent,
-    TableAvartaComponent
+    TableAvartaComponent,
+    FormComponent,
+    ShowValidateComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
