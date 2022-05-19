@@ -1,1 +1,7 @@
-<p>show-validate works!</p>
+
+<span *ngIf="(field.dirty||field.touched)&& field.errors?.['required']" class="text-danger">phai nhap</span>
+<span *ngIf="(field.dirty||field.touched)&& field.errors?.['minlength']" class="text-danger">{{field.errors?.['minlength'].requiredLength}} ki tu</span>
+
+<span *ngIf="(field.dirty||field.touched)&& field.errors?.['min']" class="text-danger">toi thieu la {{field.errors?.['min'].min}} tuoi</span>
+<span *ngIf="(field.dirty||field.touched)&& field.errors?.['max']" class="text-danger">toi da la {{field.errors?.['max'].max}} tuoi</span>
+
