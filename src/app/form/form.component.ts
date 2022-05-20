@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
     this.user=this.user.filter((item)=>item.id!==id)
   }
   buttonEdit(id:number){
-    const updateId = this.user.find((users:any)=>users.id==id);
+    const updateId = this.user.find((user:any)=>user.id===id);
     this.inputValue={
       id:updateId.id,
       name:updateId.name,
