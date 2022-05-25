@@ -13,6 +13,9 @@ import { TableDameComponent } from './table-dame/table-dame.component';
 import { TableAvartaComponent } from './table/table-avarta/table-avarta.component';
 import { FormComponent } from './form/form.component';
 import { ShowValidateComponent } from './components/show-validate/show-validate.component';
+import { ProductClientComponent } from './product-client/product-client.component';
+import { AboutClientComponent } from './about-client/about-client.component';
+import { ProductDetailClientComponent } from './product-detail-client/product-detail-client.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ShowValidateComponent } from './components/show-validate/show-validate.
     TableDameComponent,
     TableAvartaComponent,
     FormComponent,
-    ShowValidateComponent
+    ShowValidateComponent,
+    ProductClientComponent,
+    AboutClientComponent,
+    ProductDetailClientComponent
 
   ],
   imports: [

@@ -45,15 +45,10 @@ export class FormComponent implements OnInit {
   buttonDelete(id: number) {
     this.users = this.users.filter((item) => item.id !== id);
   }
-  buttonEdit(id: number) {
-    const updateId = this.users.find((user: any) => user.id === id);
-    this.inputValue={
-      id:updateId?.id,
-      name:updateId?.name,
-      age:updateId?.age,
-      phone:updateId?.phone,
-      email:updateId?.email
-    }
+  buttonEdit(user:any,id: number) {
+    // const updateId = this.users.find((user: any) => user.id === id);
+    this.inputValue= user.find((item:any)=>item.id===id)
+   
    
   }
 }
