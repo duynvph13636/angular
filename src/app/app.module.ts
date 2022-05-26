@@ -16,7 +16,9 @@ import { ShowValidateComponent } from './components/show-validate/show-validate.
 import { ProductClientComponent } from './product-client/product-client.component';
 import { AboutClientComponent } from './about-client/about-client.component';
 import { ProductDetailClientComponent } from './product-detail-client/product-detail-client.component';
-
+import { UserComponent } from './user/user.component';
+import { ListComponent } from './user/list/list.component';
+import { UserFormComponent } from './user/form/form.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,10 @@ import { ProductDetailClientComponent } from './product-detail-client/product-de
     ShowValidateComponent,
     ProductClientComponent,
     AboutClientComponent,
-    ProductDetailClientComponent
+    ProductDetailClientComponent,
+    UserComponent,
+    ListComponent,
+    UserFormComponent
 
   ],
   imports: [

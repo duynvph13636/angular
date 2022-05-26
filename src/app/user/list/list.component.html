@@ -1,0 +1,26 @@
+<p>list works!</p>
+<div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tên</th>
+          <th>Tuổi</th>
+          <th>Email</th>
+          <th>SDT</th>
+          <th>STT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+         <td>{{user.id}}</td>
+         <td>{{user.name}}</td>
+         <td>{{user.age}}</td>
+         <td>{{user.email}}</td>
+         <td>{{user.phone}}</td>
+         <!-- <td><button class="btn btn-primary" (click)="buttonEdit(users,user.id)">Edit</button></td> -->
+         <!-- <td><button class="btn btn-danger" (click)="buttonDelete(user.id)">DELETE</button></td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
