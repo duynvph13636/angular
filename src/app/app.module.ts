@@ -18,7 +18,11 @@ import { AboutClientComponent } from './about-client/about-client.component';
 import { ProductDetailClientComponent } from './product-detail-client/product-detail-client.component';
 import { UserComponent } from './user/user.component';
 import { ListComponent } from './user/list/list.component';
-import { UserFormComponent } from './user/form/form.component'; 
+import { UserFormComponent } from './user/form/form.component';
+import { LayoutsComponent } from './layouts/layouts.component';
+import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { HomeClientComponent } from './home-client/home-client.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,11 @@ import { UserFormComponent } from './user/form/form.component';
     ProductDetailClientComponent,
     UserComponent,
     ListComponent,
-    UserFormComponent
+    UserFormComponent,
+    LayoutsComponent,
+    ClientLayoutComponent,
+    AdminLayoutComponent,
+    HomeClientComponent
 
   ],
   imports: [
