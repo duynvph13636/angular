@@ -1,9 +1,16 @@
 <div class="container">
-  <header>header admin</header>
+  <header>
+    <ul>
+      <li><a routerLink="/admin/products">Product</a></li>
+      <li><a routerLink="/admin/products/edit:id">Edit</a></li>
+      <li><a routerLink="/admin/products"></a></li>
+     
+    </ul>
+  </header>
   <div>
     <aside>aside admin</aside>
     <main>
-        <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </main>
   </div>
   <footer>footer admin</footer>
