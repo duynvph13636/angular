@@ -14,11 +14,28 @@ products:Product[];
   }
 
   ngOnInit(): void {
-    this.productService.getProduct().subscribe((data)=>{
+    this.productService.getProducts().subscribe((data)=>{
       this.products=data;
     })
     
-    
+   
+  } 
+  onGetList(){
+      this.productService.getProducts().subscribe((data)=>{
+        this.products=data
+        
+      })
+    }
+  onDelete(id:number){
+    const confirmDelete = confirm('Banj cos muon xoa khong?');
+    if(confirmDelete&&id){
+      console.log(id);
+      this.productService.deleteProduct(id).subscribe((data)=>{
+        console.log(data);
+        this.onGetList();
+        
+      })
+    }
   }
 
 }

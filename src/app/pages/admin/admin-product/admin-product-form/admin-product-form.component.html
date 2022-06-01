@@ -1,1 +1,13 @@
 <p>admin-product-form works!</p>
+<div>
+<a routerLink="/admin/products"><button class="btn btn-primary">Back</button></a>
+</div>
+<form action="" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="" class="">Product Name</label>
+        <input type="text" class="form-control" formControlName=""name>
+    </div>
+    <div>
+      <button class="btn btn-info">Submit</button>
+    </div>
+</form>
