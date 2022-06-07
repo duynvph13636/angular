@@ -9,6 +9,7 @@ import { ClientLayoutComponent } from './layouts/client-layout/client-layout.com
 import { AdminProductDetailComponent } from './pages/admin/admin-product/admin-product-detail/admin-product-detail.component';
 import { AdminProductFormComponent } from './pages/admin/admin-product/admin-product-form/admin-product-form.component';
 import { AdminProductListComponent } from './pages/admin/admin-product/admin-product-list/admin-product-list.component';
+import { LoginComponent } from './pages/auth/login/login.component';
 import { ProductClientComponent } from './product-client/product-client.component';
 import { ProductDetailClientComponent } from './product-detail-client/product-detail-client.component';
 import { UserComponent } from './user/user.component';
@@ -57,7 +58,7 @@ const routes: Routes = [
             component: AdminProductFormComponent,
           },
           {
-            path: 'edit:id',
+            path: 'edit/:id',
             component: AdminProductFormComponent,
           },
           {
@@ -72,6 +73,15 @@ const routes: Routes = [
     path: 'about',
     component: AboutClientComponent,
   },
+  {
+    path:'auth',
+    children:[
+      {
+        path:'login',
+        component:LoginComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({
