@@ -5,4 +5,8 @@
     </div>
     <div>ID san pham {{product._id}}</div>
     <div>Ten san pham {{product.name}}</div>
+    <div>
+      <input type="number" class="form-contol" min="1" [value]="cartValue" (input)="onChangeCartValue($event)">
+      <button class="btn btn-success" (click)="onAddToCart()">add card</button>
+    </div>
 </div>

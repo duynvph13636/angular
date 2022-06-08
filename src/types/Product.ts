@@ -7,3 +7,8 @@ export type Product={
 export type ProductCreate={
     name:string
 }
+export type ProductCart={
+    _id:number,
+    name:string,
+    value:number
+}
